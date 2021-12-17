@@ -16,14 +16,10 @@ countries_temperature = [
     ['Poland', [50, 50, 53.6, 57.2, 55.4, 55.4]]
 ]
 
-print("Countrie's average temperature:\n")
+print("Countries' average temperature:\n")
 for country in countries_temperature:
-    count = 0
-    sum = 0
-    for temp in country[1]:
-        sum += temp
-        count += 1
-    print(country[0], ' - %.1f C' % ((sum / count - 32) / 1.8))
+        print(country[0], ' - %.1f C' % ((sum(country[1]) / len(country[1]) - 32) / 1.8))
+
 
 #TASK 3
 import random
@@ -49,13 +45,13 @@ print(f"The number of elements greater than 170 and lesser than 195\n"
 import math
 
 def my_log(mas):
-    for i in range(len(mas)):
-        if mas[i] > 0:
-            mas[i] = math.log(mas[i], math.e)
+    log_lst = []
+    for i in mas:
+        if i > 0:
+            log_lst.append(math.log(i))
         else:
-            mas[i] = 'None'
-    return mas
-
+            log_lst.append('None')
+    return log_lst
 
 a = [float (i) for i in input('Enter a list of numbers:\n').split()]
 print(my_log(a))
