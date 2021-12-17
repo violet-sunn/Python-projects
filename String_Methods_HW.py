@@ -1,15 +1,15 @@
 #TASK 1
-'''s = "У лукоморья 123 дуб зеленый 456"
+s = "У лукоморья 123 дуб зеленый 456"
 print(s.find('я'), s.count('у'))
 if s.isalpha():
     print(s.upper())
 if len(s) > 4:
     print(s.lower())
 s = s.replace('У', 'О')
-print(s)'''
+print(s)
 
 #TASK 2
-'''usr_ans1 = input('Is it raining?\n')
+usr_ans1 = input('Is it raining?\n')
 if usr_ans1.lower() == 'yes':
     usr_ans2 = input('Is it windy?\n')
     if usr_ans2.lower() == 'yes':
@@ -17,86 +17,86 @@ if usr_ans1.lower() == 'yes':
     else:
         print('Take an umbrella')
 else:
-    print('Enjoy ur day')'''
+    print('Enjoy ur day')
 
 #TASK 3
 #MISSING
 
 #TASK 4
-'''name = input('Enter you name, please: ')
+name = input('Enter you name, please: ')
 surname = input('Enter your surname, please: ')
 full_name = name + ' ' + surname
-print(f"It's nice to meet you {full_name}, your full name is {len(full_name) - 1} characters long")'''
+print(f"It's nice to meet you {full_name}, your full name is {len(full_name) - 1} characters long")
 
 #TASK 5
-'''name = input('Enter you name in lower, please: ')
+name = input('Enter you name in lower, please: ')
 surname = input('Enter your surname in lower, please: ')
 full_name = name + ' ' + surname
-print("It's nice to meet you", full_name.title())'''
+print("It's nice to meet you", full_name.title())
 
 #TASK 6
-'''s = input('Enter any poem line:\n')
+s = input('Enter any poem line:\n')
 print(len(s))
 start, stop = map(int, input("Enter the starting and stopping points: ").split())
-print(s[start:stop])'''
+print(s[start:stop])
 
 #TASK 7
 #MISSING
 
 #TASK 8
-'''name = input('Enter you name, please: ')
+name = input('Enter you name, please: ')
 if len(name) < 5:
     surname = input('Enter your surname, please: ')
     full_name = name + ' ' + surname
     print(f"It's nice to meet you {full_name.upper()}")
 else:
-    print(f"It's nice to meet you {name.lower()}")'''
+    print(f"It's nice to meet you {name.lower()}")
 
 
 #TASK 9
-'''a = 2 * float(input('Enter a decimal fraction: '))
-print('%.2f' % a)'''
+a = 2 * float(input('Enter a decimal fraction: '))
+print('%.2f' % a)
 
 #TASK 10
-'''import math
-print('%.5f' %  math.pi)'''
+import math
+print('%.5f' %  math.pi)
 
 #TASK 11
-'''import math
+import math
 a = math.sqrt(int(input('Enter a number greater than 500: ')))
-print('%.2f' % a)'''
+print('%.2f' % a)
 
 #TASK 12
-'''a, b = map(int, input('Enter two numbers: ').split())
-print(f'If you divide {a} by {b}, you get {a // b} with a remainder of {a % b}')'''
+a, b = map(int, input('Enter two numbers: ').split())
+print(f'If you divide {a} by {b}, you get {a // b} with a remainder of {a % b}')
 
 #TASK 13
-'''print('Enter three numbers:')
+print('Enter three numbers:')
 s = 0
 for i in range(3):
     s += int(input()) * 10 ** (2-i)
-print('MaGiCCC: ', s)'''
+print('MaGiCCC: ', s)
 
 #TASK 14
-'''print('Equation: ax + b = 0')
+print('Equation: ax + b = 0')
 a = int(input('Enter a: '))
 b = int(input('Enter b: '))
-print('x = ', -b / a)'''
+print('x = ', -b / a)
 
 #TASK 15
-'''a = int(input('Enter a: '))
+a = int(input('Enter a: '))
 b = int(input('Enter b: '))
 if a > b:
     print(a)
-else: print(b)'''
+else: print(b)
 
 #TASK 16
-'''max = 0
+max = 0
 for i in range(3):
     a = int(input())
     if a > max or max == 0:
         max = a
-print(max)'''
+print(max)
 
 #TASK 17
 #MISSING
@@ -105,7 +105,7 @@ print(max)'''
 #MISSING
 
 #TASK 19
-'''day = int(input('Enter the day of your birth: '))
+day = int(input('Enter the day of your birth: '))
 month = input('Enter the month of your birth: ')
 if month == 'January':
     if day <= 19:
@@ -166,21 +166,21 @@ elif month == 'December':
     if day <= 21:
         print('Your zodiac sign: Sagittarius')
     else:
-        print('Your zodiac sign: Capricornus')'''
+        print('Your zodiac sign: Capricornus')
 
 
 #TASK 20
 #MISSING
 
 #TASK 21
-'''num = int(input("Enter your ticket's serial number: "))
+num = int(input("Enter your ticket's serial number: "))
 num1 = num // 1000
 if num % 10 + num // 10 % 10 + num // 100 % 10 == num1 % 10 + num1 // 10 % 10 + num1 // 100 % 10:
     print('Lucky one!')
-else: print('Unlucky :(')'''
+else: print('Unlucky :(')
 
 #TASK 22
-'''import math
+import math
 shape = input('Enter the shape: ')
 if shape == 'Circle':
     r = int(input('Enter the radius: '))
@@ -194,4 +194,4 @@ elif shape == 'Triangle':
 elif shape == 'Rectangle':
     a = int(input('Enter the length of side a: '))
     b = int(input('Enter the length of side b: '))
-    print("Rectangle's area: ", a * b)'''
+    print("Rectangle's area: ", a * b)
