@@ -3,7 +3,7 @@ L = [3, 6, 7, 4, -5, 4, 3, -1]
 if sum(L) > 2:
     print(len(L))
 if abs(max(L)-min(L)) > 10:
-    print(L.sort(reverse=True))
+    print(sorted(L, reverse = True))
 else: print("Разность меньше 10")
 
 #TASK 2
